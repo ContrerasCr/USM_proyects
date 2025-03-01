@@ -1,0 +1,16 @@
+Programa para analisis de datos para variables aleatorias
+
+Variables aleatorias discretas:
+-Bernulli
+-Binomial
+-Hipergeometrico
+-Geometrico
+-Binomial Negativo
+-Poisson
+
+Variables aleatorias continuas
+-Exponencial
+-Gamma
+-Uniforme
+-Weibull
+-Normal

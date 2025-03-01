@@ -1,0 +1,90 @@
+from tkinter import *
+from tkinter import ttk
+from tkinter import font
+from funciones import *
+
+
+class T4(Frame):
+    def __init__(self, geom):
+        Frame.__init__(self, )
+        self.hig, self.wid = geom
+
+        # Tasa de Interes Real
+        self.it1 = ttk.Label(self, text='Tasa de Interes Real', font=font.Font(size=12))
+        self.it1.place(x=0, y=20)
+        self.it2 = ttk.Label(self, text='Interes')
+        self.it2.place(x=0, y=80)
+        self.it3 = ttk.Label(self, text='Inflacion')
+        self.it3.place(x=0, y=100)
+        self.it4 = ttk.Entry(self, textvariable=0, width=13)
+        self.it4.place(x=90, y=80)
+        self.it5 = ttk.Entry(self, textvariable=5, width=13)
+        self.it5.place(x=90, y=100)
+        self.it6 = ttk.Button(self, text='Calcular')
+        self.it6.place(x=0, y=130)
+        self.it7 = ttk.Label(self, text='Resultado')
+        self.it7.place(x=90, y=133)
+
+        # Tasa de Interes Inflada
+        self.tdi1 = ttk.Label(self, text='Tasa de interes inflada', font=font.Font(size=12))
+        self.tdi1.place(x=200, y=20)
+        self.tdi2 = ttk.Label(self, text='Interes Real:')
+        self.tdi2.place(x=200, y=80)
+        self.tdi3 = ttk.Label(self, text='Inflacion')
+        self.tdi3.place(x=200, y=100)
+        self.tdi4 = ttk.Entry(self, textvariable=0, width=13)
+        self.tdi4.place(x=290, y=80)
+        self.tdi5 = ttk.Entry(self, textvariable=5, width=13)
+        self.tdi5.place(x=290, y=100)
+        self.tdi6 = ttk.Button(self, text='Calcular')
+        self.tdi6.place(x=200, y=130)
+        self.tdi7 = ttk.Label(self, text='Resultado')
+        self.tdi7.place(x=290, y=133)
+
+        # Valor Presente inflacion
+        self.ctis1 = ttk.Label(self, text='Valor presente', font=font.Font(size=12))
+        self.ctis1.place(x=0, y=220)
+        self.ctis2 = ttk.Label(self, text='con inflacion', font=font.Font(size=12))
+        self.ctis2.place(x=0, y=240)
+        self.ctis3 = ttk.Label(self, text='Interes Periodo1')
+        self.ctis3.place(x=0, y=280)
+        self.ctis4 = ttk.Label(self, text='Perdiodo 1')
+        self.ctis4.place(x=0, y=300)
+        self.ctis5 = ttk.Label(self, text='Periodo 2')
+        self.ctis5.place(x=0, y=320)
+        self.ctis5 = ttk.Label(self, text='Periodo 2')
+        self.ctis5.place(x=0, y=340)
+        self.ctis6 = ttk.Entry(self, textvariable=0, width=13)
+        self.ctis6.place(x=90, y=280)
+        self.ctis7 = ttk.Entry(self, textvariable=5, width=13)
+        self.ctis7.place(x=90, y=300)
+        self.ctis8 = ttk.Entry(self, textvariable=5, width=13)
+        self.ctis8.place(x=90, y=320)
+        self.ctis8 = ttk.Entry(self, textvariable=5, width=13)
+        self.ctis8.place(x=90, y=340)
+        self.ctis9 = ttk.Button(self, text='Calcular')
+        self.ctis9.place(x=0, y=370)
+        self.ctis10 = ttk.Label(self, text='Resultado')
+        self.ctis10.place(x=90, y=373)
+
+        # Valor futuro inflacion
+        self.ctic1 = ttk.Label(self, text='', font=font.Font(size=12))
+        self.ctic1.place(x=200, y=220)
+        self.ctic2 = ttk.Label(self, text='', font=font.Font(size=12))
+        self.ctic2.place(x=200, y=240)
+        self.ctic3 = ttk.Label(self, text='Valor presente')
+        self.ctic3.place(x=200, y=280)
+        self.ctic4 = ttk.Label(self, text='Inflacion')
+        self.ctic4.place(x=200, y=300)
+        self.ctic5 = ttk.Label(self, text='Periodos')
+        self.ctic5.place(x=200, y=320)
+        self.ctic6 = ttk.Entry(self, textvariable=0, width=13)
+        self.ctic6.place(x=290, y=280)
+        self.ctic7 = ttk.Entry(self, textvariable=5, width=13)
+        self.ctic7.place(x=290, y=300)
+        self.ctic8 = ttk.Entry(self, textvariable=5, width=13)
+        self.ctic8.place(x=290, y=320)
+        self.ctic9 = ttk.Button(self, text='Calcular')
+        self.ctic9.place(x=200, y=350)
+        self.ctic10 = ttk.Label(self, text='Resultado')
+        self.ctic10.place(x=290, y=353)
